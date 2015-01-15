@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5304261DBEA88F1535D3A587"
+               BuildableName = "DinnerTimeV2.app"
+               BlueprintName = "DinnerTimeV2"
+               ReferencedContainer = "container:DinnerTimeV2.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5304261DBEA88F1535D3A587"
+            BuildableName = "DinnerTimeV2.app"
+            BlueprintName = "DinnerTimeV2"
+            ReferencedContainer = "container:DinnerTimeV2.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>

@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530421814F41590B6BC43E36 /* DinnerListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */; };
+		53042236C4D396674C7C44ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042E24BC299D9ABE3F0627 /* AppDelegate.m */; };
+		5304244C12E0490B9558B505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53042B30DFE65D179EE5ED96 /* LaunchScreen.xib */; };
+		5304252DE4EE99A08AD75E62 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530428BA43CD93213F9DEC8C /* AppDelegateTests.m */; };
+		5304278FB3CBBB7A00E4D270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 530422086FDBE959C36EDB4D /* main.m */; };
+		53042A50BE43DD6470C2FF01 /* DinnerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042C5739DB3138A08A6E6A /* DinnerListViewController.m */; };
+		53042BB1C3094883DE9CF773 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304286F3400236B77FFE06A /* ApplicationAssembly.m */; };
+		53042E42B3CB81D57701DFA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5304284586A6B41B22B87A14 /* Images.xcassets */; };
+		53042FF88276F6DECFF8661D /* DinnerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */; };
+		8DD47F8D3350D5FE38AA24F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921736692F6AAD096A726F00 /* libPods.a */; };
+		BA154A60CA038316F6353C6C /* libPods-DinnerTimeV2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 273713B9503892E6A3ED8E6D /* libPods-DinnerTimeV2Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5304239A527BA16662DD2709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53042879906CE5574AC6D6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5304261DBEA88F1535D3A587;
+			remoteInfo = DinnerTimeV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		273713B9503892E6A3ED8E6D /* libPods-DinnerTimeV2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinnerTimeV2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		528D0E346377EAB5133E756C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		530420B7D31B5DAA3B01B0D8 /* DinnerTimeV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinnerTimeV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		530422086FDBE959C36EDB4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53042453463C31E4A3580FDD /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
+		530426A881AA5B5967B30917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DinnerListViewController.xib; sourceTree = "<group>"; };
+		530427164E3164F220202304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		530427418180619382D1CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		5304284586A6B41B22B87A14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5304286F3400236B77FFE06A /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
+		530428BA43CD93213F9DEC8C /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
+		53042968D37127C1D4099E56 /* DinnerTimeV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinnerTimeV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		530429F0767FF52B2248C926 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListViewControllerTests.m; sourceTree = "<group>"; };
+		53042C5739DB3138A08A6E6A /* DinnerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListViewController.m; sourceTree = "<group>"; };
+		53042E24BC299D9ABE3F0627 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53042E58198623B94AB2212F /* DinnerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerListViewController.h; sourceTree = "<group>"; };
+		921736692F6AAD096A726F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A521E2435526BA8EF62A7D6F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B551723640B3F6140A1B3E9D /* Pods-DinnerTimeV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerTimeV2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerTimeV2Tests/Pods-DinnerTimeV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F1A245E55B8234C8A34AE749 /* Pods-DinnerTimeV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerTimeV2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerTimeV2Tests/Pods-DinnerTimeV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53042142B7E3B8F20B3921BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD47F8D3350D5FE38AA24F0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53042DC2975BE3B7EA10753C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA154A60CA038316F6353C6C /* libPods-DinnerTimeV2Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35EC720C54625791E65F030C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				528D0E346377EAB5133E756C /* Pods.debug.xcconfig */,
+				A521E2435526BA8EF62A7D6F /* Pods.release.xcconfig */,
+				F1A245E55B8234C8A34AE749 /* Pods-DinnerTimeV2Tests.debug.xcconfig */,
+				B551723640B3F6140A1B3E9D /* Pods-DinnerTimeV2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		530420E0B7ECAEA66E7DE247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53042968D37127C1D4099E56 /* DinnerTimeV2.app */,
+				530420B7D31B5DAA3B01B0D8 /* DinnerTimeV2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53042147360A5317C369A32D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				530426A881AA5B5967B30917 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		530425469AEEFB78BC6E62F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				530427418180619382D1CE58 /* Info.plist */,
+				530422086FDBE959C36EDB4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5304272ABCE7E90D60E2CF63 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				5304286F3400236B77FFE06A /* ApplicationAssembly.m */,
+				53042453463C31E4A3580FDD /* ApplicationAssembly.h */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		5304295580F5238460DDD76E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				530428BA43CD93213F9DEC8C /* AppDelegateTests.m */,
+				53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		53042973AD46572C04B525CE /* DinnerTimeV2 */ = {
+			isa = PBXGroup;
+			children = (
+				530425469AEEFB78BC6E62F7 /* Supporting Files */,
+				5304284586A6B41B22B87A14 /* Images.xcassets */,
+				53042B30DFE65D179EE5ED96 /* LaunchScreen.xib */,
+				530429F0767FF52B2248C926 /* AppDelegate.h */,
+				53042E24BC299D9ABE3F0627 /* AppDelegate.m */,
+				5304295580F5238460DDD76E /* Tests */,
+				5304272ABCE7E90D60E2CF63 /* Assemblies */,
+				53042C5739DB3138A08A6E6A /* DinnerListViewController.m */,
+				53042E58198623B94AB2212F /* DinnerListViewController.h */,
+				530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */,
+			);
+			path = DinnerTimeV2;
+			sourceTree = "<group>";
+		};
+		53042AA4D9BF729D767E4672 = {
+			isa = PBXGroup;
+			children = (
+				530420E0B7ECAEA66E7DE247 /* Products */,
+				53042973AD46572C04B525CE /* DinnerTimeV2 */,
+				53042F3613A0BA977D8AE13E /* DinnerTimeV2Tests */,
+				35EC720C54625791E65F030C /* Pods */,
+				E16DD2DD94ABAE25503F38D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53042F3613A0BA977D8AE13E /* DinnerTimeV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53042147360A5317C369A32D /* Supporting Files */,
+			);
+			path = DinnerTimeV2Tests;
+			sourceTree = "<group>";
+		};
+		E16DD2DD94ABAE25503F38D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				921736692F6AAD096A726F00 /* libPods.a */,
+				273713B9503892E6A3ED8E6D /* libPods-DinnerTimeV2Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5304261DBEA88F1535D3A587 /* DinnerTimeV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5304250965D9ED7C5B63D6DE /* Build configuration list for PBXNativeTarget "DinnerTimeV2" */;
+			buildPhases = (
+				6ECBA97E9AD1BBC15D7FB32B /* Check Pods Manifest.lock */,
+				53042EDA8EAED015CC5184FD /* Sources */,
+				53042142B7E3B8F20B3921BA /* Frameworks */,
+				53042AB7808C6EE475C9B3C4 /* Resources */,
+				25441AEBB2013C5815E9BC31 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinnerTimeV2;
+			productName = DinnerTimeV2;
+			productReference = 53042968D37127C1D4099E56 /* DinnerTimeV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5304287531F0A584A4164FB4 /* DinnerTimeV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530428C141201F77CA2274ED /* Build configuration list for PBXNativeTarget "DinnerTimeV2Tests" */;
+			buildPhases = (
+				9C1544445AC345E8877AD63B /* Check Pods Manifest.lock */,
+				53042B5269F524FF1EA5928D /* Sources */,
+				53042DC2975BE3B7EA10753C /* Frameworks */,
+				530421CC5543AB1A0B5647AE /* Resources */,
+				2112230233DA973BE8F00BD2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53042B0D06B7358EE080F4DC /* PBXTargetDependency */,
+			);
+			name = DinnerTimeV2Tests;
+			productName = DinnerTimeV2Tests;
+			productReference = 530420B7D31B5DAA3B01B0D8 /* DinnerTimeV2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53042879906CE5574AC6D6F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Marek Mościchowski";
+			};
+			buildConfigurationList = 53042E68A0F4274D2D407223 /* Build configuration list for PBXProject "DinnerTimeV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53042AA4D9BF729D767E4672;
+			productRefGroup = 530420E0B7ECAEA66E7DE247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5304261DBEA88F1535D3A587 /* DinnerTimeV2 */,
+				5304287531F0A584A4164FB4 /* DinnerTimeV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		530421CC5543AB1A0B5647AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53042AB7808C6EE475C9B3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53042E42B3CB81D57701DFA1 /* Images.xcassets in Resources */,
+				5304244C12E0490B9558B505 /* LaunchScreen.xib in Resources */,
+				53042FF88276F6DECFF8661D /* DinnerListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2112230233DA973BE8F00BD2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinnerTimeV2Tests/Pods-DinnerTimeV2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25441AEBB2013C5815E9BC31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ECBA97E9AD1BBC15D7FB32B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1544445AC345E8877AD63B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53042B5269F524FF1EA5928D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5304252DE4EE99A08AD75E62 /* AppDelegateTests.m in Sources */,
+				530421814F41590B6BC43E36 /* DinnerListViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53042EDA8EAED015CC5184FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5304278FB3CBBB7A00E4D270 /* main.m in Sources */,
+				53042236C4D396674C7C44ED /* AppDelegate.m in Sources */,
+				53042BB1C3094883DE9CF773 /* ApplicationAssembly.m in Sources */,
+				53042A50BE43DD6470C2FF01 /* DinnerListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53042B0D06B7358EE080F4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5304261DBEA88F1535D3A587 /* DinnerTimeV2 */;
+			targetProxy = 5304239A527BA16662DD2709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53042B30DFE65D179EE5ED96 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				530427164E3164F220202304 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		530420219BA0CDC11E6ECC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53042842AE9A6B629A095DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		530428BC84E08ADB8CFF3650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528D0E346377EAB5133E756C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DinnerTimeV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53042AFE7362F994A29A4068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B551723640B3F6140A1B3E9D /* Pods-DinnerTimeV2Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DinnerTimeV2.app/DinnerTimeV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DinnerTimeV2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		53042C941D2BE0A10791CA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A521E2435526BA8EF62A7D6F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DinnerTimeV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53042E8D775C9A76F2892C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A245E55B8234C8A34AE749 /* Pods-DinnerTimeV2Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DinnerTimeV2.app/DinnerTimeV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DinnerTimeV2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5304250965D9ED7C5B63D6DE /* Build configuration list for PBXNativeTarget "DinnerTimeV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530428BC84E08ADB8CFF3650 /* Debug */,
+				53042C941D2BE0A10791CA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530428C141201F77CA2274ED /* Build configuration list for PBXNativeTarget "DinnerTimeV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53042E8D775C9A76F2892C07 /* Debug */,
+				53042AFE7362F994A29A4068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53042E68A0F4274D2D407223 /* Build configuration list for PBXProject "DinnerTimeV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53042842AE9A6B629A095DCA /* Debug */,
+				530420219BA0CDC11E6ECC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53042879906CE5574AC6D6F1 /* Project object */;
+}
