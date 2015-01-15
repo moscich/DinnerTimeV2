@@ -17,15 +17,15 @@
 
 }
 
-- (void)test_appLaunch_HasWindowWithDinnerListControllerAsRootViewControllerInstantiated {
+- (void)test_appLaunch_WindowHasNavigationControllerAsRootWithDinnerListViewController{
   TyphoonBlockComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly:[ApplicationAssembly assembly]];
   AppDelegate *appDelegate = [factory componentForType:[AppDelegate class]];
 
-  [appDelegate.window.rootViewController isKindOfClass:[DinnerListViewController class]];
-
   XCTAssertNotNil(appDelegate.window);
   XCTAssertNotNil(appDelegate.window.rootViewController);
-  XCTAssertTrue([appDelegate.window.rootViewController isKindOfClass:[DinnerListViewController class]]);
+  XCTAssertTrue([appDelegate.window.rootViewController isKindOfClass:[UINavigationController class]]);
+  XCTAssertEqual(((UINavigationController *)appDelegate.window.rootViewController).viewControllers.count,1);
+  XCTAssertTrue([((UINavigationController *)appDelegate.window.rootViewController).viewControllers[0] isKindOfClass:[DinnerListViewController class]]);
 }
 
 @end

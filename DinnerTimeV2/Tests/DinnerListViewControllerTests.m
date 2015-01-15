@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <AFNetworking/AFHTTPRequestOperationManager.h>
-#import <objc/objc-api.h>
 #import "ApplicationAssembly.h"
 #import "DinnerListViewController.h"
 #import "OCMockObject.h"

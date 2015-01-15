@@ -31,7 +31,15 @@
 }
 
 - (UINavigationController *)rootViewController {
-    return [TyphoonDefinition withClass:[DinnerListViewController class] ];
+    return [TyphoonDefinition withClass:[UINavigationController class] configuration:^(TyphoonDefinition *definition) {
+      [definition useInitializer:@selector(initWithRootViewController:) parameters:^(TyphoonMethod *initializer) {
+        [initializer injectParameterWith:[self dinnerListViewController]];
+      }];
+    }];
+}
+
+- (DinnerListViewController *)dinnerListViewController{
+    return [TyphoonDefinition withClass:[DinnerListViewController class]];
 }
 
 @end
