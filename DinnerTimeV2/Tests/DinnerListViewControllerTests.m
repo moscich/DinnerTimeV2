@@ -43,6 +43,14 @@
   XCTAssertEqualObjects(cell2.textLabel.text, @"Second Test Dinner");
 }
 
+- (void)test_viewDidLoad_Always_HasAddButton{
+  [self.dinnerListViewController view];
+
+  XCTAssertNotNil(self.dinnerListViewController.navigationItem.rightBarButtonItem);
+  XCTAssertEqual(self.dinnerListViewController.navigationItem.rightBarButtonItem.target,self.dinnerListViewController);
+  XCTAssertEqual(self.dinnerListViewController.navigationItem.rightBarButtonItem.action ,@selector(addButtonTapped));
+}
+
 - (void)test_addButtonTapped_PresentsAddDinnerViewController{
   id partialMock = [OCMockObject partialMockForObject:self.dinnerListViewController];
   [[partialMock expect] presentViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
