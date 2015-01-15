@@ -23,38 +23,38 @@
 @implementation DinnerListViewControllerTests
 
 - (void)test_viewDidLoad_DisplaysFetchedDinnersOnTheTableView {
-    TyphoonBlockComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly:[ApplicationAssembly assembly]];
-    DinnerListViewController *dinnerListViewController = [factory componentForType:[DinnerListViewController class]];
-    id mockSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
-    dinnerListViewController.sessionManager = mockSessionManager;
-    [[[mockSessionManager stub] andDo:^(NSInvocation *invocation) {
-      void (^passedBlock)(AFHTTPRequestOperation *operation, id responseObject);
-      [invocation getArgument:&passedBlock atIndex:4];
-      passedBlock(nil, [self getStubDinnersJSON]);
-    }] GET:@"http://localhost:3001/dinners" parameters:OCMOCK_ANY success:OCMOCK_ANY failure:OCMOCK_ANY];
+  TyphoonBlockComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly:[ApplicationAssembly assembly]];
+  DinnerListViewController *dinnerListViewController = [factory componentForType:[DinnerListViewController class]];
+  id mockSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
+  dinnerListViewController.sessionManager = mockSessionManager;
+  [[[mockSessionManager stub] andDo:^(NSInvocation *invocation) {
+    void (^passedBlock)(AFHTTPRequestOperation *operation, id responseObject);
+    [invocation getArgument:&passedBlock atIndex:4];
+    passedBlock(nil, [self getStubDinnersJSON]);
+  }] GET:@"http://localhost:3001/dinners" parameters:OCMOCK_ANY success:OCMOCK_ANY failure:OCMOCK_ANY];
 
-    [dinnerListViewController view];
+  [dinnerListViewController view];
 
-    UITableViewCell *cell1 = [((id <UITableViewDataSource>)dinnerListViewController) tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
-    UITableViewCell *cell2 = [((id <UITableViewDataSource>)dinnerListViewController) tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0]];
+  UITableViewCell *cell1 = [dinnerListViewController.tableView.dataSource tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+  UITableViewCell *cell2 = [dinnerListViewController.tableView.dataSource tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0]];
 
-    XCTAssertEqualObjects(cell1.textLabel.text, @"First Test Dinner");
-    XCTAssertEqualObjects(cell2.textLabel.text, @"Second Test Dinner");
+  XCTAssertEqualObjects(cell1.textLabel.text, @"First Test Dinner");
+  XCTAssertEqualObjects(cell2.textLabel.text, @"Second Test Dinner");
 }
 
-- (NSData *)getStubDinnersJSON{
-    NSString *resultsString = @"{  "
-              "   \"dinners\":[  "
-              "      {  "
-              "         \"title\":\"First Test Dinner\","
-              "      },"
-              "      {  "
-              "         \"title\":\"Second Test Dinner\","
-              "      }]"
-            "}";
-    NSData *objectData = [resultsString dataUsingEncoding:NSUTF8StringEncoding];
+- (NSData *)getStubDinnersJSON {
+  NSString *resultsString = @"{  "
+          "   \"dinners\":[  "
+          "      {  "
+          "         \"title\":\"First Test Dinner\","
+          "      },"
+          "      {  "
+          "         \"title\":\"Second Test Dinner\","
+          "      }]"
+          "}";
+  NSData *objectData = [resultsString dataUsingEncoding:NSUTF8StringEncoding];
 
-    return objectData;
+  return objectData;
 }
 
 @end
