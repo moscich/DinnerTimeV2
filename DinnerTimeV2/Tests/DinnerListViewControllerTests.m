@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 #import "ApplicationAssembly.h"
 #import "DinnerListViewController.h"
 #import "OCMockObject.h"
@@ -56,6 +57,22 @@
   [dinnerListViewController addButtonTapped];
 
   [partialMock verify];
+}
+
+- (void)test_sendDinner_Always_SendNewDinner{
+  TyphoonBlockComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly:[ApplicationAssembly assembly]];
+  DinnerListViewController *dinnerListViewController = [factory componentForType:[DinnerListViewController class]];
+  AddDinnerViewController *addDinnerViewController = [AddDinnerViewController new];
+  [addDinnerViewController view];
+  addDinnerViewController.dinnerTitleTextField.text = @"Test Dinner";
+  addDinnerViewController.delegate = dinnerListViewController;
+  id mockSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
+  dinnerListViewController.sessionManager = mockSessionManager;
+  [[mockSessionManager expect] POST:@"/dinners" parameters:@{@"title":@"Test Dinner"} success:OCMOCK_ANY failure:OCMOCK_ANY];
+
+  [addDinnerViewController sendDinner];
+
+  [mockSessionManager verify];
 }
 
 - (NSData *)getStubDinnersJSON {

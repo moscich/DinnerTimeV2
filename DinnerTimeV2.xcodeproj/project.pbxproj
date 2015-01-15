@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		530421814F41590B6BC43E36 /* DinnerListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */; };
 		53042236C4D396674C7C44ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042E24BC299D9ABE3F0627 /* AppDelegate.m */; };
+		530423D03C0CEA48F4C926A1 /* AddDinnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5304235B14DB047284F228AC /* AddDinnerViewController.xib */; };
 		5304244C12E0490B9558B505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53042B30DFE65D179EE5ED96 /* LaunchScreen.xib */; };
 		5304252DE4EE99A08AD75E62 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 530428BA43CD93213F9DEC8C /* AppDelegateTests.m */; };
 		5304278FB3CBBB7A00E4D270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 530422086FDBE959C36EDB4D /* main.m */; };
@@ -36,6 +37,7 @@
 		528D0E346377EAB5133E756C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		530420B7D31B5DAA3B01B0D8 /* DinnerTimeV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinnerTimeV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		530422086FDBE959C36EDB4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5304235B14DB047284F228AC /* AddDinnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDinnerViewController.xib; sourceTree = "<group>"; };
 		53042453463C31E4A3580FDD /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
 		5304262A9FA2BE7235525B5F /* AddDinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDinnerViewController.h; sourceTree = "<group>"; };
 		530426A881AA5B5967B30917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				53042C5739DB3138A08A6E6A /* DinnerListViewController.m */,
 				53042E58198623B94AB2212F /* DinnerListViewController.h */,
 				530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */,
+				5304235B14DB047284F228AC /* AddDinnerViewController.xib */,
 			);
 			path = DinnerTimeV2;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				53042E42B3CB81D57701DFA1 /* Images.xcassets in Resources */,
 				5304244C12E0490B9558B505 /* LaunchScreen.xib in Resources */,
 				53042FF88276F6DECFF8661D /* DinnerListViewController.xib in Resources */,
+				530423D03C0CEA48F4C926A1 /* AddDinnerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

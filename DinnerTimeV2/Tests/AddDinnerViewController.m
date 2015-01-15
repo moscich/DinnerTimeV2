@@ -4,9 +4,14 @@
 //
 
 #import "AddDinnerViewController.h"
+#import "DinnerListViewController.h"
 
 
 @implementation AddDinnerViewController {
 
 }
+- (void)sendDinner {
+  [self.delegate addDinnerWithDinnerTitle:self.dinnerTitleTextField.text];
+}
+
 @end

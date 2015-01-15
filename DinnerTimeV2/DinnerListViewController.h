@@ -5,8 +5,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "AddDinnerViewController.h"
 
-@interface DinnerListViewController : UIViewController
+@interface DinnerListViewController : UIViewController <AddDinnerViewControllerDelegate>
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) id sessionManager;
 

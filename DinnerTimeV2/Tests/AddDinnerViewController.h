@@ -6,5 +6,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class DinnerListViewController;
+@class AddDinnerViewController;
+
+@protocol AddDinnerViewControllerDelegate
+- (void)addDinnerWithDinnerTitle:(NSString *)title;
+@end
+
 @interface AddDinnerViewController : UIViewController
+@property(nonatomic, strong) id <AddDinnerViewControllerDelegate> delegate;
+@property(nonatomic, strong) IBOutlet UITextField *dinnerTitleTextField;
+
+- (void)sendDinner;
 @end

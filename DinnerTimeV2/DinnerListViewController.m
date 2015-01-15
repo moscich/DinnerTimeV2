@@ -42,4 +42,9 @@
 - (void)addButtonTapped {
   [self presentViewController:[AddDinnerViewController new] animated:YES completion:nil];
 }
+
+- (void)addDinnerWithDinnerTitle:(NSString *)title {
+  [self.sessionManager POST:@"/dinners" parameters:@{@"title":title} success:nil failure:nil];
+}
+
 @end
