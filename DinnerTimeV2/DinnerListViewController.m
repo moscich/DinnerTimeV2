@@ -15,7 +15,7 @@
 }
 
 - (void)viewDidLoad {
-  [self.sessionManager GET:@"http://localhost:3001/dinners" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+  [self.sessionManager GET:@"http://localhost:3001/dinners" parameters:nil success:^(NSURLSessionDataTask *operation, id responseObject) {
     NSMutableArray *results = [NSMutableArray new];
     NSError *jsonError;
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:&jsonError];

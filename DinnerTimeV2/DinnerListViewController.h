@@ -7,9 +7,11 @@
 #import <UIKit/UIKit.h>
 #import "AddDinnerViewController.h"
 
+@class AFHTTPSessionManager;
+
 @interface DinnerListViewController : UIViewController <AddDinnerViewControllerDelegate>
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
-@property(nonatomic, strong) id sessionManager;
+@property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
 
 - (void)addButtonTapped;
 @end

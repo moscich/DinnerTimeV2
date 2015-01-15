@@ -50,6 +50,11 @@
   XCTAssertEqual(self.dinnerListViewController.navigationItem.rightBarButtonItem.action ,@selector(addButtonTapped));
 }
 
+- (void)test_init_Always_DefaultsSessionManager{
+  XCTAssertNotNil(self.dinnerListViewController.sessionManager);
+  XCTAssertTrue([self.dinnerListViewController.sessionManager isKindOfClass:[AFHTTPSessionManager class]]);
+}
+
 - (void)test_addButtonTapped_PresentsAddDinnerViewController{
   id partialMock = [OCMockObject partialMockForObject:self.dinnerListViewController];
   [[partialMock expect] presentViewController:[OCMArg checkWithBlock:^BOOL(id obj) {

@@ -6,6 +6,7 @@
 #import "ApplicationAssembly.h"
 #import "AppDelegate.h"
 #import "DinnerListViewController.h"
+#import "AFHTTPSessionManager.h"
 
 
 @implementation ApplicationAssembly {
@@ -39,7 +40,9 @@
 }
 
 - (DinnerListViewController *)dinnerListViewController{
-    return [TyphoonDefinition withClass:[DinnerListViewController class]];
+    return [TyphoonDefinition withClass:[DinnerListViewController class] configuration:^(TyphoonDefinition *definition) {
+      [definition injectProperty:@selector(sessionManager) with:[AFHTTPSessionManager new]];
+    }];
 }
 
 @end
