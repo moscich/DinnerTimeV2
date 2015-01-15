@@ -15,6 +15,7 @@
 #import "OCMStubRecorder.h"
 #import "OCMArg.h"
 #import "AFHTTPRequestOperation.h"
+#import "AddDinnerViewController.h"
 
 @interface DinnerListViewControllerTests : XCTestCase
 
@@ -35,11 +36,26 @@
 
   [dinnerListViewController view];
 
+  int numberOfRows = [dinnerListViewController.tableView.dataSource tableView:dinnerListViewController.tableView numberOfRowsInSection:0];
   UITableViewCell *cell1 = [dinnerListViewController.tableView.dataSource tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
   UITableViewCell *cell2 = [dinnerListViewController.tableView.dataSource tableView:dinnerListViewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0]];
 
+  XCTAssertEqual(numberOfRows, 2);
   XCTAssertEqualObjects(cell1.textLabel.text, @"First Test Dinner");
   XCTAssertEqualObjects(cell2.textLabel.text, @"Second Test Dinner");
+}
+
+- (void)test_addButtonTapped_PresentsAddDinnerViewController{
+  TyphoonBlockComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly:[ApplicationAssembly assembly]];
+  DinnerListViewController *dinnerListViewController = [factory componentForType:[DinnerListViewController class]];
+  id partialMock = [OCMockObject partialMockForObject:dinnerListViewController];
+  [[partialMock expect] presentViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
+    return [obj isKindOfClass:[AddDinnerViewController class]];
+  }] animated:YES completion:nil];
+
+  [dinnerListViewController addButtonTapped];
+
+  [partialMock verify];
 }
 
 - (NSData *)getStubDinnersJSON {

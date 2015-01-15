@@ -9,4 +9,6 @@
 @interface DinnerListViewController : UIViewController
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) id sessionManager;
+
+- (void)addButtonTapped;
 @end
