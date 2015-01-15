@@ -5,7 +5,6 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import "DinnerListViewController.h"
-#import "AddDinnerViewController.h"
 
 @interface DinnerListViewController () <UITableViewDataSource>
 @property (nonatomic, strong) NSArray *model;
