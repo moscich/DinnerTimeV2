@@ -45,7 +45,9 @@
 }
 
 - (void)addDinnerWithDinnerTitle:(NSString *)title {
-  [self.sessionManager POST:@"/dinners" parameters:@{@"title":title} success:nil failure:nil];
+  [self.sessionManager POST:@"/dinners" parameters:@{@"title":title} success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self dismissViewControllerAnimated:YES completion:nil];
+  } failure:nil];
 }
 
 @end

@@ -15,8 +15,8 @@
 		5304278FB3CBBB7A00E4D270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 530422086FDBE959C36EDB4D /* main.m */; };
 		53042A50BE43DD6470C2FF01 /* DinnerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042C5739DB3138A08A6E6A /* DinnerListViewController.m */; };
 		53042BB1C3094883DE9CF773 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304286F3400236B77FFE06A /* ApplicationAssembly.m */; };
+		53042C4B61486BE62E1AA8AD /* AddDinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5304279F7386862987A2DE52 /* AddDinnerViewController.m */; };
 		53042E42B3CB81D57701DFA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5304284586A6B41B22B87A14 /* Images.xcassets */; };
-		53042E6F335DE0DA5361C3BA /* AddDinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53042D65FEBD202964C600E7 /* AddDinnerViewController.m */; };
 		53042FF88276F6DECFF8661D /* DinnerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */; };
 		8DD47F8D3350D5FE38AA24F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921736692F6AAD096A726F00 /* libPods.a */; };
 		BA154A60CA038316F6353C6C /* libPods-DinnerTimeV2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 273713B9503892E6A3ED8E6D /* libPods-DinnerTimeV2Tests.a */; };
@@ -39,19 +39,19 @@
 		530422086FDBE959C36EDB4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5304235B14DB047284F228AC /* AddDinnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDinnerViewController.xib; sourceTree = "<group>"; };
 		53042453463C31E4A3580FDD /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
-		5304262A9FA2BE7235525B5F /* AddDinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDinnerViewController.h; sourceTree = "<group>"; };
 		530426A881AA5B5967B30917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DinnerListViewController.xib; sourceTree = "<group>"; };
 		530427164E3164F220202304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		530427418180619382D1CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		5304279F7386862987A2DE52 /* AddDinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDinnerViewController.m; sourceTree = "<group>"; };
 		5304284586A6B41B22B87A14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5304286F3400236B77FFE06A /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
 		530428BA43CD93213F9DEC8C /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
 		53042968D37127C1D4099E56 /* DinnerTimeV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinnerTimeV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53042988026DC33F4A503B90 /* AddDinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDinnerViewController.h; sourceTree = "<group>"; };
 		530429F0767FF52B2248C926 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListViewControllerTests.m; sourceTree = "<group>"; };
 		53042C5739DB3138A08A6E6A /* DinnerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerListViewController.m; sourceTree = "<group>"; };
-		53042D65FEBD202964C600E7 /* AddDinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDinnerViewController.m; sourceTree = "<group>"; };
 		53042E24BC299D9ABE3F0627 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53042E58198623B94AB2212F /* DinnerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerListViewController.h; sourceTree = "<group>"; };
 		921736692F6AAD096A726F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +131,6 @@
 			children = (
 				530428BA43CD93213F9DEC8C /* AppDelegateTests.m */,
 				53042B3339476B83DB1A61C0 /* DinnerListViewControllerTests.m */,
-				53042D65FEBD202964C600E7 /* AddDinnerViewController.m */,
-				5304262A9FA2BE7235525B5F /* AddDinnerViewController.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -151,6 +149,8 @@
 				53042E58198623B94AB2212F /* DinnerListViewController.h */,
 				530426DBC1BBA296DBA3CE5A /* DinnerListViewController.xib */,
 				5304235B14DB047284F228AC /* AddDinnerViewController.xib */,
+				5304279F7386862987A2DE52 /* AddDinnerViewController.m */,
+				53042988026DC33F4A503B90 /* AddDinnerViewController.h */,
 			);
 			path = DinnerTimeV2;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				53042236C4D396674C7C44ED /* AppDelegate.m in Sources */,
 				53042BB1C3094883DE9CF773 /* ApplicationAssembly.m in Sources */,
 				53042A50BE43DD6470C2FF01 /* DinnerListViewController.m in Sources */,
-				53042E6F335DE0DA5361C3BA /* AddDinnerViewController.m in Sources */,
+				53042C4B61486BE62E1AA8AD /* AddDinnerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

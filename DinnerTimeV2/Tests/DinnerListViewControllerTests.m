@@ -29,7 +29,7 @@
 }
 
 - (void)test_viewDidLoad_DisplaysFetchedDinnersOnTheTableView {
-  [self addMockSessionManagerToDinnerListViewController:[self setupStubReturningTestDinners]];
+  [self addMockSessionManagerToDinnerListViewController:[self setupStubSessionManagerReturningTestDinners]];
 
   [self.dinnerListViewController view];
 
@@ -67,11 +67,8 @@
 }
 
 - (void)test_sendDinner_Always_SendNewDinner{
-  AddDinnerViewController *addDinnerViewController = [AddDinnerViewController new];
-  [addDinnerViewController view];
-  addDinnerViewController.dinnerTitleTextField.text = @"Test Dinner";
-  addDinnerViewController.delegate = self.dinnerListViewController;
-
+  AddDinnerViewController *addDinnerViewController = [self setupAddDinnerController];
+  
   id mockSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
   [[mockSessionManager expect] POST:@"/dinners" parameters:@{@"title":@"Test Dinner"} success:OCMOCK_ANY failure:OCMOCK_ANY];
   [self addMockSessionManagerToDinnerListViewController:mockSessionManager];
@@ -81,7 +78,34 @@
   [mockSessionManager verify];
 }
 
-- (id)setupStubReturningTestDinners {
+- (void)test_sendDinner_WhenSucceed_DismissAddDinnerViewController{
+  AddDinnerViewController *addDinnerViewController = [self setupAddDinnerController];
+
+  id partialMock = [OCMockObject partialMockForObject:self.dinnerListViewController];
+  [[partialMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
+
+  id stubSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
+  [[[stubSessionManager stub] andDo:^(NSInvocation *invocation) {
+    void (^passedBlock)(AFHTTPRequestOperation *operation, id responseObject);
+    [invocation getArgument:&passedBlock atIndex:4];
+    passedBlock(nil, [self getStubAddDinnerJSON]);
+    [partialMock verify];
+  }] POST:OCMOCK_ANY parameters:OCMOCK_ANY success:OCMOCK_ANY failure:OCMOCK_ANY];
+
+  [self addMockSessionManagerToDinnerListViewController:stubSessionManager];
+
+  [addDinnerViewController sendDinner];
+}
+
+- (AddDinnerViewController *)setupAddDinnerController {
+  AddDinnerViewController *addDinnerViewController = [AddDinnerViewController new];
+  [addDinnerViewController view];
+  addDinnerViewController.dinnerTitleTextField.text = @"Test Dinner";
+  addDinnerViewController.delegate = self.dinnerListViewController;
+  return addDinnerViewController;
+}
+
+- (id)setupStubSessionManagerReturningTestDinners {
   id mockSessionManager = [OCMockObject mockForClass:[AFHTTPSessionManager class]];
   [[[mockSessionManager stub] andDo:^(NSInvocation *invocation) {
     void (^passedBlock)(AFHTTPRequestOperation *operation, id responseObject);
@@ -94,6 +118,16 @@
 - (void)addMockSessionManagerToDinnerListViewController:(AFHTTPSessionManager *)sessionManager {
   self.dinnerListViewController.sessionManager = sessionManager;
 }
+
+- (NSData *)getStubAddDinnerJSON {
+  NSString *resultsString = @"{  "
+          "   \"success\":true"
+          "}";
+  NSData *objectData = [resultsString dataUsingEncoding:NSUTF8StringEncoding];
+
+  return objectData;
+}
+
 
 - (NSData *)getStubDinnersJSON {
   NSString *resultsString = @"{  "
